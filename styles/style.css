@@ -1,0 +1,184 @@
+*{
+    box-sizing: border-box;
+}
+
+/*le header*/
+header.begin {
+	background-image: url("../photos/chimie.jpg"); /*l'image sur l'arrière-plan du header */
+	background-size: cover;
+    color:white; /*la couleur du texte (titre) dans le header*/
+    padding:3px; /*les marge au alentours du texte*/
+	text-align: center; /*mettre le texte au milieu du header*/
+	text-shadow: 2px 2px 8px #000000; /*l'ombre du header*/
+	
+}
+
+/*les caractéristique de tous le body*/
+body{
+	background-color: #C3CDDA; /*la couleur de l'arrière-plan du body (toute la page)*/
+	font-family: Arial, Helvetica, sans-serif; /*le type de texte*/
+	line-height:150%; /*augmenter l'espacement des ligne de 150% */
+}
+
+/*design du footer */
+footer.end{
+	background-image: url("../photos/chimie2.jpg"); /*l'image sur l'arrière-plan du footer */
+	background-size: cover;
+    clear: both;
+    width:100%;
+	text-align: center; /*mettre le texte au milieu du footer*/
+	 
+}
+
+/*le retour en haut*/
+section a{ 	
+	text-decoration:none;
+	font-weight: bold;
+	color:#294565;
+}
+/* The navigation bar */
+nav{
+   position: fixed; /* bar de navigation fixée */
+   float: left; /*le main est a droite et la barre de navigation a gauche*/
+   padding: 15px;
+   width: 25%;  /*25% de la largeur pour la barre de navigation, et 75% pour le main*/
+}
+
+/*le main*/
+main {
+   float: right; /*le main est a droite et la barre de navigation a gauche*/
+   padding: 10px; /*les marges*/
+   width: 75%;
+}
+ /*les caractéristique des sections */
+section{
+     padding: 15px;
+     width: 100%; /*les sections occuperons toute la largeur du main*/
+ }
+ 
+ 
+ 
+ /*mettre en gras le lien de la page sélectionnée*/
+nav a.selected{
+	font-weight: bold;
+}
+/*caractéristique des lien dans la barre de navigation*/
+nav a{
+	text-decoration:none; /*enlever les décoration dans les lien comme le soulignement*/
+	color: white;  /*la couleur des lien(du texte)*/
+	display: block; /*le type des case :block*/
+	padding: 9px 16px; /*les marges au alentours des liens*/
+}
+
+/*caractéristique de la liste des liens*/ 
+nav ul {
+    list-style-type: none; /*enlever les points des cotés*/
+    margin: 0; /*enlever la marge de haut*/
+    padding: 0; /*enlever la marge de coté*/
+}
+
+/*caractéristique de chaque élement de la liste des liens*/
+nav li {
+    padding: 8px;
+    margin-bottom: 8px; /*l'espacement entre les cases des liens*/
+    background-color: #294565; /*la couleur bleu des cases contenant les liens dans le var*/
+    color: #000000;
+	border: 0px solid;
+    box-shadow: 5px 5px 5px 5px #748CA8; /*l'ombre de chaque case de lien(élement de la liste sur le var*/
+}
+
+
+/* Change background on mouse-over (quand la souris est sur les cases des liens la couleur change) */
+nav li:hover {
+    background-color: #567394;
+}
+
+
+
+/*the rest contain everything related to the images (position , rotation ,margins ) */
+div.Hlcontainer {
+	float: left;
+	 margin-right:15px;
+	  margin-bottom:5px;
+  position: relative;
+  width: 229px;
+   height:155px;
+}
+div.Hrcontainer {
+	float: right;
+	 margin-left:15px;
+	  margin-bottom:5px;
+  position: relative;
+  width: 229px;
+   height:155px;
+}
+div.Vlcontainer {
+	float: left;
+	 margin-right:15px;
+	  margin-bottom:5px;
+  position: relative;
+  width: 156px;
+   height:208px;
+}
+div.Vrcontainer {
+	float: right;
+	 margin-left:15px;
+	 margin-bottom:5px;
+  position: relative;
+  width: 156px;
+   height:208px;
+}
+
+img.limage {
+	float: left;
+	 margin-right:15px;
+	  margin-bottom:5px;
+  display: block;
+  height: auto;
+}
+img.rimage {
+	float: right;
+	margin-left:15px;
+	margin-bottom:5px;
+  display: block;
+  height: auto;
+}
+
+div.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #567394;
+}
+
+div.Hlcontainer:hover .overlay {
+  opacity: 1;
+}
+div.Hrcontainer:hover .overlay {
+  opacity: 1;
+}
+div.Vlcontainer:hover .overlay {
+  opacity: 1;
+}
+div.Vrcontainer:hover .overlay {
+  opacity: 1;
+}
+/*le texte ecrit sur les image */
+div.text {
+  color: white;
+  font-size: 16px;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  transform: translate(-5px, -5px);
+  -ms-transform: translate(-5px, -5px);*/
+}
+ 
+
+

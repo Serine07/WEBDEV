@@ -1,0 +1,139 @@
+*{
+    box-sizing: border-box;
+}
+
+/*le header*/
+header.begin {
+	background-image: url("../photos/chimie.jpg"); /*l'image sur l'arrière-plan du header */
+	background-size: cover;
+    color:white; /*la couleur du texte (titre) dans le header*/
+    padding:3px; /*les marge au alentours du texte*/
+	text-align: center; /*mettre le texte au milieu du header*/
+	text-shadow: 2px 2px 8px #000000; /*l'ombre du header*/
+	
+}
+
+/*les caractéristique de tous le body*/
+body{
+	background-color: #C3CDDA; /*la couleur de l'arrière-plan du body (toute la page)*/
+	font-family: Arial, Helvetica, sans-serif; /*le type de texte*/
+	line-height:150%; /*augmenter l'espacement des ligne de 150% */
+}
+
+/*design du footer */
+footer.end{
+	background-image: url("../photos/chimie2.jpg"); /*l'image sur l'arrière-plan du footer */
+	background-size: cover;
+    clear: both;
+    width:100%;
+	text-align: center;
+	 
+}
+
+/* The navigation bar */
+nav{
+   position: fixed; /* bar de navigation fixée */
+   float: left; /*le main est a droite et la barre de navigation a gauche*/
+   padding: 15px;
+   width: 25%;  /*25% de la largeur pour la barre de navigation, et 75% pour le main*/
+}
+
+/*le main*/
+main {
+   float: right; /*le main est a droite et la barre de navigation a gauche*/
+   padding: 10px; /*les marges*/
+   width: 45%;
+}
+
+aside{
+   float: right; /*le main est a droite et la barre de navigation a gauche*/
+   padding: 10px; /*les marges*/
+   width: 30%;
+   background-color: #9AB0CD;
+}
+
+ /*les caractéristique des sections */
+ section{
+	 float: left;
+     padding: 15px;
+     width: 100%;
+ }
+ 
+ 
+ /*mettre en gras la page sélectionnée*/
+nav a.selected{
+	font-weight: bold;
+}
+
+/*caractéristique des lien dans la barre de navigation*/
+nav a{
+	text-decoration:none; /*enlever les décoration dans les lien comme le soulignement*/
+	color: white;  /*la couleur des lien*/
+	display: block; /*le type des case :block*/
+	padding: 9px 16px; /*les marges au alentours des liens*/
+}
+
+/*caractéristique de la liste des liens*/ 
+nav ul {
+    list-style-type: none; /*enlever les points des cotés*/
+    margin: 0; /*enlever la marge de haut*/
+    padding: 0; /*enlever la marge de coté*/
+}
+
+/*caractéristique de chaque élement de la liste des liens*/
+nav li {
+    padding: 8px;
+    margin-bottom: 8px; /*l'espacement entre les cases des liens*/
+    background-color: #294565; /*la couleur bleu des cases contenant les liens dans le var*/
+    color: #000000;
+	border: 0px solid;
+    box-shadow: 5px 5px 5px 5px #748CA8; /*l'ombre de chaque case de lien(élement de la liste sur le var*/
+}
+
+/* Change background on mouse-over (quand la souris est sur les cases des liens la couleur change) */
+nav li:hover {
+    background-color: #567394;
+}
+
+/*le retour en haut*/
+section footer a{ 	
+	text-decoration:none;
+	font-weight: bold;
+	color:#294565;
+}
+
+/*caractéristique du tableau dans l'index*/
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 2px solid  #294565;
+}
+
+table.menu {
+    width: auto;
+    margin-right: 0px;
+    margin-left: auto;
+}
+/*make shadow for a box(por le tableau*/
+#shadowbox {
+  border: 0px solid;
+  padding: 10px;
+  box-shadow: 5px 5px 5px 5px #294565;
+  background-color: #C3CDDA;
+  
+}
+
+/*precise border's radius*/
+#myImg {
+  border-radius: 5px;
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+	margin-bottom: 12px;
+	box-shadow: 5px 5px 5px 5px #294565;
+}
